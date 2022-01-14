@@ -1,0 +1,5 @@
+leitor=input('Digite Algo')
+print('È um Numero?',leitor.isnumeric())
+print('É Alfabetico?',leitor.isalpha())
+print('É Decimal?',leitor.isdecimal())
+print('Está Capitalizada?',leitor.istitle())
