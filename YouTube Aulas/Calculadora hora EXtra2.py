@@ -1,4 +1,9 @@
 print('CALCULADORA  HORA EXTRA')
+cores= {'limpa':'\033[m',
+        'azul':'\033[34m',
+        'amarelo':'\033 [33m',
+        'pretoebranco':'\033[7;30m'}
+
 n1 = float(input('Digite seu Salário: '))
 ho = float(input('Digite numero de horas trabalhadas no Mês: '))
 dia = int(input('Digite Quantos dias tem o Mês: '))
@@ -31,7 +36,7 @@ while dsr != 3:
         print('Total da sua Hora Extra é: {}'.format(total))
         print('Total 30% é :{:.2f} Reais'.format(opa))
         print('Total 50% é :{:.2f} Reais'.format(op2a))
-        print('Total 100% é: {:.2f} Reais'.format(op3a))
+        print('Total 100% é: {}{:.2f}{} Reais'.format(cores['azul'],op3a,cores['limpa']))
         dsr = 3
     else:
         print('Continuar')
